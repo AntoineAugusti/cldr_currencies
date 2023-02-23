@@ -54,7 +54,7 @@ defmodule Cldr.Currency.Test do
   end
 
   test "that module docs are generated for a backend" do
-    {:docs_v1, 3, :elixir, "text/markdown", _, %{}, _} = Code.fetch_docs(MyApp.Cldr.Currency)
+    assert {:docs_v1, _, :elixir, "text/markdown", _, %{}, _} = Code.fetch_docs(MyApp.Cldr.Currency)
   end
 
   test "Cldr.Chars protocol" do
